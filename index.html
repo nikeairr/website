@@ -3,80 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikearr - Portfolio</title>
+    <title>Nikearr - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <img src="https://th.bing.com/th/id/OIP.lfmw_0Ru92mL4s3VbfG8OAAAAA?rs=1&pid=ImgDetMain" alt="Logo" class="logo">
-            </div>
-            <h1 class="navbar-title">Portfolio</h1>
-            <nav class="navbar-right">
-                <ul>
-                    <li><a href="https://discord.com/users/897417264477925376" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
-                    <li><a href="https://www.tiktok.com/@nikearrir._" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
-                    <li><a href="https://github.com/nikeairr" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="https://th.bing.com/th/id/OIP.lfmw_0Ru92mL4s3VbfG8OAAAAA?rs=1&pid=ImgDetMain" alt="Logo" class="logo">
+                    <span class="logo-text">Nikearr</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="animate-on-scroll">Hi, I'm <span class="highlight">Nikearr</span></h2>
-            <p class="animate-on-scroll subtitle">I'm a <span class="highlight">Problem Solver</span></p>
-            <p class="animate-on-scroll description">Crafting digital experiences with code and creativity. Specialized in building exceptional digital experiences 🛠️. More info Below</p>
-            <div class="hero-buttons">
-                <a href="https://discord.com/users/897417264477925376"target="_blank" class="cta-button animate-on-scroll" >Contact Me </a>
-                <a href="#projects" class="cta-button animate-on-scroll">View Work</a>
-            </div>
-        </div>
-        <img src="https://th.bing.com/th/id/OIP.lfmw_0Ru92mL4s3VbfG8OAAAAA?rs=1&pid=ImgDetMain" alt="Your Cat" class="cat-image animate-on-scroll">
-    </section>
-
-    <section id="about" class="about">
-        <div class="about-content">
-            <h3 class="animate-on-scroll"><span>👤</span> About Me <span>🌟</span></h3>
-            <p class="animate-on-scroll">Hey! I'm Nikearr, a technology enthusiast and passionate about servers and development. I started my journey with servers in 2019 and, since then, I have been improving my skills in the area, working on different platforms and contributing to the creation of dynamic and efficient online environments. Plus, I'm a server lover.</p>
-            <p class="animate-on-scroll">My mission is to work in a language like C++. I'm always looking for new challenges and opportunities to grow and learn more about the digital world!</p>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h3 class="animate-on-scroll">My Projects</h3>
-        <div class="project-list">
-            <div class="project-card animate-on-scroll">
-                <i class="fas fa-code"></i>
-                <h4>Web Development</h4>
-                <p>Creating dynamic and responsive websites using modern technologies like HTML, CSS, JavaScript, and React.</p>
-                <a href="#" class="project-button">Project in Progress...</a>
-            </div>
-            <div class="project-card animate-on-scroll">
-                <i class="fas fa-server"></i>
-                <h4>Server Management</h4>
-                <p>Expertise in managing and optimizing servers for performance, security, and scalability.</p>
-                <a href="#" class="project-button">Project in Progress...</a>
-            </div>
-            <div class="project-card animate-on-scroll">
-                <i class="fas fa-robot"></i>
-                <h4>Automation Tools</h4>
-                <p>Developing scripts and tools to automate repetitive tasks and improve workflow efficiency.</p>
-                <a href="#" class="project-button">Project in Progress...</a>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate-on-scroll">Hi, I'm <span>Nikearr</span></h1>
+                    <p class="animate-on-scroll subtitle">I'm a <span class="highlight">Problem Solver</span> passionate about technology</p>
+                    <p class="animate-on-scroll description">Crafting digital experiences with code and creativity. Specialized in building exceptional solutions 🛠️. More info below.</p>
+                    <div class="hero-buttons">
+                        <a href="https://discord.com/users/897417264477925376" target="_blank" class="btn btn-primary animate-on-scroll">Contact Me</a>
+                        <a href="#projects" class="btn btn-secondary animate-on-scroll">View Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://th.bing.com/th/id/OIP.lfmw_0Ru92mL4s3VbfG8OAAAAA?rs=1&pid=ImgDetMain" alt="Nikearr" class="animate-on-scroll">
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p class="animate-on-scroll">Nikearr.pt - Website under development 🧑‍💻</p>
-        <p class="animate-on-scroll">New Website with more information and with more details even with purchases in the future🤫...</p>
-        <p class="animate-on-scroll">Stay tuned for something amazing!</p>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p>Hello! I'm Nikearr, a technology enthusiast passionate about servers and development. I started my journey with servers in 2019 and since then, I've been improving my skills in the area, working on different platforms and contributing to the creation of dynamic and efficient online environments.</p>
+                    <p>My mission is to work with languages like C++. I'm always looking for new challenges and opportunities to grow and learn more about the digital world!</p>
+                    <p>Besides development, I have experience in server management, performance optimization and creating automation tools to improve workflows.</p>
+                </div>
+                <div class="skills animate-on-scroll">
+                    <div class="skill-item">
+                        <h4>Web Development</h4>
+                        <p>Creating responsive and modern websites and web applications.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Server Management</h4>
+                        <p>Configuration, maintenance and optimization of servers.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Automation</h4>
+                        <p>Development of scripts and tools for task automation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>My Projects</h2>
+            </div>
+            <div class="project-list">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Creating dynamic and responsive websites using modern technologies like HTML, CSS, JavaScript and React.</p>
+                    <span class="project-status">In Development</span>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Server Management</h3>
+                    <p>Expertise in managing and optimizing servers for performance, security and scalability.</p>
+                    <span class="project-status">In Development</span>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automation Tools</h3>
+                    <p>Developing scripts and tools to automate repetitive tasks and improve workflow efficiency.</p>
+                    <span class="project-status">In Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="languages" id="languages">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Languages & Technologies</h2>
+            <p>Technologies I work with and their applications</p>
+        </div>
+        <div class="languages-grid">
+            <div class="language-card python animate-on-scroll">
+                <div class="language-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                </div>
+                <h3>Python</h3>
+                <div class="language-info">
+                    <p>A versatile programming language used for web development, data analysis, artificial intelligence, scientific computing, and automation.</p>
+                </div>
+            </div>
+            <div class="language-card java animate-on-scroll">
+                <div class="language-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                </div>
+                <h3>Java</h3>
+                <div class="language-info">
+                    <p>An object-oriented programming language commonly used for building enterprise-scale applications, Android apps, and web services.</p>
+                </div>
+            </div>
+            <div class="language-card html animate-on-scroll">
+                <div class="language-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                </div>
+                <h3>HTML5</h3>
+                <div class="language-info">
+                    <p>The standard markup language for creating web pages and web applications, providing structure to web content.</p>
+                </div>
+            </div>
+            <div class="language-card css animate-on-scroll">
+                <div class="language-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                </div>
+                <h3>CSS3</h3>
+                <div class="language-info">
+                    <p>A stylesheet language used for describing the presentation of documents written in HTML, including layout, colors, and fonts.</p>
+                </div>
+            </div>
+            <div class="language-card javascript animate-on-scroll">
+                <div class="language-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+                <h3>JavaScript</h3>
+                <div class="language-info">
+                    <p>A programming language that enables interactive web pages and is an essential part of web applications alongside HTML and CSS.</p>
+                </div>
+            </div>
+            <div class="language-card cpp animate-on-scroll">
+                <div class="language-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                </div>
+                <h3>C++</h3>
+                <div class="language-info">
+                    <p>A general-purpose programming language used for system/application software, game development, drivers, and performance-critical applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://discord.com/users/897417264477925376" target="_blank" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@nikearrir._" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://github.com/nikeairr" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>Nikearr.pt - Website under development 🧑‍💻</p>
+                    <p>New website with more information and details coming soon...</p>
+                    <p>Stay tuned for something amazing!</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Nikearr. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
